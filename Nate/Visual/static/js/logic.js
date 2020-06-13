@@ -16,8 +16,8 @@ var myMap = L.map("map", {
   }).addTo(myMap);
   
   // Load in geojson data
-  var geoData = "static/data/us-county-boundaries.geojson";
-  var jsonData= "static/data/NY_Stats.json"
+  var geoData = "static/data/nate.geojson";
+  
   
   // Grab data with d3
   d3.json(geoData, function(data) {
@@ -26,10 +26,10 @@ var myMap = L.map("map", {
     var geojson = L.choropleth(data, {
   
       // Define what  property in the features to use
-      valueProperty: "Percentage",
+      valueProperty: "percentage",
   
       // Set color scale (in hex values)
-      scale: ["#ffffb2", "#b10026"],
+      scale: ["#33FFF7", "#3D33FF"],
   
       // Number of breaks in step range
       steps: 10,
@@ -45,9 +45,9 @@ var myMap = L.map("map", {
   
       // Binding a pop-up to each layer
       onEachFeature: function(feature, layer) {
-        layer.bindPopup("County: " + feature.properties.County +
+        layer.bindPopup("County: " + feature.properties.name +
                         "<br>Obesity Rate:<br>" +
-                        feature.properties.Percentage);
+                        feature.properties.percentage +"%");
       }
     });
   
