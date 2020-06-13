@@ -1,0 +1,40 @@
+location,total,white,black,native,asian,islander,other,mixed,latino,whitealone,latitude,longitude,fullcounty,abbr
+"Rockland County, New York",37371,39400,34626,0,47879,0,21949,17828,28303,39989,41,-73.91,"Rockland County, New York",NY
+"Sullivan County, New York",29049,31193,16948,0,25003,0,22688,17358,20707,32717,41.44,-74.82,"Sullivan County, New York",NY
+"Ulster County, New York",35400,39348,15928,21134,8180,0,21792,13511,17533,40607,41.6,-73.97,"Ulster County, New York",NY
+"Madison County, New York",28421,29139,5676,0,29900,0,0,21785,10225,29307,42.61,-75.81,"Madison County, New York",NY
+"Queens County, New York",31866,38723,30154,23975,29435,0,22057,26664,24007,44874,40.56,-73.91,"Queens County, New York",NY
+"Westchester County, New York",56893,70067,33470,42077,60993,0,24129,25763,29589,76500,40.9,-73.82,"Westchester County, New York",NY
+"Warren County, New York",33270,0,0,0,0,0,0,0,0,0,43.31,-73.64,"Warren County, New York",NY
+"Wayne County, New York",33106,34209,18918,0,40980,0,25178,6948,18694,34894,43.04,-77.09,"Wayne County, New York",NY
+"Bronx County, New York",21712,28331,22154,16304,25068,11400,16158,24317,17847,41270,40.84,-73.87,"Bronx County, New York",NY
+"Broome County, New York",28097,29457,15718,40758,29125,0,15477,13571,16218,29817,42.01,-75.79,"Broome County, New York",NY
+"Dutchess County, New York",38897,41830,28852,21726,51721,0,19536,15564,22326,43407,41.5,-73.96,"Dutchess County, New York",NY
+"Steuben County, New York",29880,29812,54423,0,41192,0,10382,8975,16607,29942,42.02,-77.14,"Steuben County, New York",NY
+"Onondaga County, New York",33325,36780,17947,21096,29824,0,24024,14958,17034,37610,42.79,-76.1,"Onondaga County, New York",NY
+"Ontario County, New York",36344,37297,42059,0,29672,0,14001,15419,15206,37888,42.61,-77.4,"Ontario County, New York",NY
+"Chemung County, New York",30185,31912,15157,0,58662,0,17259,5560,25668,31891,42,-76.62,"Chemung County, New York",NY
+"Jefferson County, New York",26769,27303,17904,11509,32062,0,32324,24832,19754,27841,43.71,-76.06,"Jefferson County, New York",NY
+"Albany County, New York",36931,41031,19367,0,39743,0,40449,14708,23086,41701,42.43,-74.19,"Albany County, New York",NY
+"Erie County, New York",32795,36431,19803,15345,27785,0,17376,16243,18945,36878,42.49,-78.86,"Erie County, New York",NY
+"Nassau County, New York",50397,57021,38236,19221,48351,15416,22065,27635,27988,60505,40.58,-73.65,"Nassau County, New York",NY
+"Orange County, New York",34279,37084,28363,18545,47083,0,22451,16663,23604,38963,41.2,-74.2,"Orange County, New York",NY
+"Rensselaer County, New York",34381,36729,27898,27982,17181,0,21734,8956,14675,37436,42.47,-73.74,"Rensselaer County, New York",NY
+"Chautauqua County, New York",25964,27153,11686,11405,31329,0,12862,12307,12420,27804,42.01,-79.45,"Chautauqua County, New York",NY
+"Clinton County, New York",27980,29971,0,0,19798,0,7455,21057,9506,30177,44.47,-73.78,"Clinton County, New York",NY
+"New York County, New York",74911,103192,28901,26810,73255,27915,18358,40377,27252,114492,40.71,-73.99,"New York County, New York",NY
+"Saratoga County, New York",43386,44052,24740,33926,53085,0,22359,27856,28545,44287,42.79,-73.67,"Saratoga County, New York",NY
+"Cattaraugus County, New York",25133,25740,11763,20523,44475,0,15114,13457,22413,25701,42.02,-78.63,"Cattaraugus County, New York",NY
+"Monroe County, New York",32970,36953,20868,17031,26621,0,19273,13734,17720,38305,42.95,-77.59,"Monroe County, New York",NY
+"Tompkins County, New York",32370,36069,21116,0,22472,0,5870,10177,20894,36117,42.36,-76.59,"Tompkins County, New York",NY
+"Oneida County, New York",27883,29661,21821,0,16588,0,10737,12007,15699,30181,42.87,-75.25,"Oneida County, New York",NY
+"Oswego County, New York",29304,30154,9179,0,18016,0,0,14273,23421,30109,43.23,-76.29,"Oswego County, New York",NY
+"Niagara County, New York",32240,34101,22287,24405,27661,0,12888,8978,19846,34287,43.04,-78.86,"Niagara County, New York",NY
+"Putnam County, New York",46846,48200,78139,0,37169,0,24819,0,28780,49284,41.33,-73.88,"Putnam County, New York",NY
+"Livingston County, New York",28134,29511,6891,0,29855,0,14754,0,8129,30052,42.52,-77.98,"Livingston County, New York",NY
+"Suffolk County, New York",43905,47239,29207,16537,41399,0,22016,22653,26695,51201,40.64,-73.15,"Suffolk County, New York",NY
+"St. Lawrence County, New York",25682,26721,0,30501,19598,0,5969,8992,8069,26873,44.83,-74.97,"St. Lawrence County, New York",NY
+"Cayuga County, New York",29116,30861,5754,0,19190,0,11431,9372,9314,31386,42.66,-76.53,"Cayuga County, New York",NY
+"Kings County, New York",34709,45225,26793,25799,30968,9831,18523,30469,22805,48641,40.64,-73.94,"Kings County, New York",NY
+"Richmond County, New York",35966,39388,26247,0,31237,0,21741,18102,24621,42262,40.58,-74.14,"Richmond County, New York",NY
+"Schenectady County, New York",31851,35328,22090,23918,28737,0,17768,9043,13621,36534,42.74,-74.18,"Schenectady County, New York",NY
