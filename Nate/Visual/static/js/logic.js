@@ -1,7 +1,8 @@
 // Creating map object
 var myMap = L.map("map", {
     center: [43.1009, -75.85],
-    zoom: 7
+    zoom: 6.25
+  
   });
   
   // Adding tile layer
@@ -46,7 +47,7 @@ var myMap = L.map("map", {
       onEachFeature: function(feature, layer) {
         layer.bindPopup("County: " + feature.properties.County +
                         "<br>Obesity Rate:<br>" +
-                        "$" + feature.properties.Percentage);
+                        feature.properties.Percentage);
       }
     });
   
