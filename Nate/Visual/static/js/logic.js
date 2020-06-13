@@ -19,7 +19,7 @@ var myMap = L.map("map", {
   var jsonData= "static/data/NY_Stats.json"
   
   // Grab data with d3
-  d3.json(jsonData, function(data) {
+  d3.json(geoData, function(data) {
   
     // Create a new choropleth layer
     var geojson = L.choropleth(data, {
