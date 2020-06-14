@@ -31,7 +31,7 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 
   const file = "assets/data/pop_2018_df.json";
 
-  var options = ["Albany", "Suffolk"]
+  var options = ["Albany", "Suffolk", "Niagara","Queens","Erie"]
 
   d3.select("#selDataset").selectAll("option")
     .data(options)
