@@ -1,57 +1,57 @@
-id,total_pop,white_population,african_american_pop,american_indian_alaska_native_pop,asian_pop,County,State,Location,Health_Topic,Percentage
-0500000US36001,309381.0,237074.0,36840.0,613.0,19602.0,Albany, New York,"(42.678066, -73.814233)",Age-adjusted percentage of adults obese (BMI 30 or higher),26.0
-0500000US36003,47462.0,45131.0,414.0,38.0,557.0,Allegany, New York,"(42.226801, -78.020567)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.6
-0500000US36005,1455444.0,296739.0,475704.0,9275.0,53593.0,Bronx, New York,"(40.85589, -73.868294)",Age-adjusted percentage of adults obese (BMI 30 or higher),31.0
-0500000US36007,196567.0,169170.0,11374.0,335.0,8411.0,Broome, New York,"(42.122015, -75.933191)",Age-adjusted percentage of adults obese (BMI 30 or higher),31.7
-0500000US36009,77922.0,71494.0,1389.0,2286.0,791.0,Cattaraugus, New York,"(42.224267, -78.606673)",Age-adjusted percentage of adults obese (BMI 30 or higher),33.5
-0500000US36011,78288.0,72240.0,3663.0,107.0,248.0,Cayuga, New York,"(42.940095, -76.560755)",Age-adjusted percentage of adults obese (BMI 30 or higher),33.0
-0500000US36013,130779.0,121646.0,3224.0,755.0,844.0,Chautauqua, New York,"(42.246904, -79.315313)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.1
-0500000US36015,87071.0,76618.0,6638.0,180.0,927.0,Chemung, New York,"(42.116644, -76.812331)",Age-adjusted percentage of adults obese (BMI 30 or higher),29.8
-0500000US36017,48844.0,47063.0,758.0,137.0,212.0,Chenango, New York,"(42.481798, -75.570013)",Age-adjusted percentage of adults obese (BMI 30 or higher),38.9
-0500000US36019,81251.0,74541.0,3815.0,49.0,1268.0,Clinton, New York,"(44.731944, -73.548883)",Age-adjusted percentage of adults obese (BMI 30 or higher),26.8
-0500000US36021,61509.0,54955.0,2698.0,86.0,1053.0,Columbia, New York,"(42.276913, -73.682168)",Age-adjusted percentage of adults obese (BMI 30 or higher),24.0
-0500000US36023,48494.0,46134.0,590.0,126.0,345.0,Cortland, New York,"(42.597101, -76.143291)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.8
-0500000US36025,46053.0,43657.0,789.0,61.0,202.0,Delaware, New York,"(42.242972, -74.997944)",Age-adjusted percentage of adults obese (BMI 30 or higher),25.8
-0500000US36027,295754.0,228378.0,31237.0,799.0,11505.0,Dutchess, New York,"(41.686216, -73.840468)",Age-adjusted percentage of adults obese (BMI 30 or higher),25.5
-0500000US36029,922578.0,718294.0,126063.0,4275.0,32105.0,Erie, New York,"(42.888143, -78.795544)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.7
-0500000US36031,38478.0,35588.0,1329.0,98.0,290.0,Essex, New York,"(44.166026, -73.685145)",Age-adjusted percentage of adults obese (BMI 30 or higher),37.0
-0500000US36033,50660.0,46232.0,2374.0,503.0,87.0,Franklin, New York,"(44.705699, -74.340621)",Age-adjusted percentage of adults obese (BMI 30 or higher),33.4
-0500000US36035,53992.0,51278.0,1276.0,78.0,245.0,Fulton, New York,"(43.06014, -74.331296)",Age-adjusted percentage of adults obese (BMI 30 or higher),31.4
-0500000US36037,58937.0,54366.0,1013.0,517.0,332.0,Genesee, New York,"(43.000121, -78.172679)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.8
-0500000US36043,63100.0,60215.0,314.0,223.0,474.0,Herkimer, New York,"(43.070026, -74.994246)",Age-adjusted percentage of adults obese (BMI 30 or higher),38.2
-0500000US36045,117635.0,101377.0,7831.0,546.0,2350.0,Jefferson, New York,"(44.019295, -75.898971)",Age-adjusted percentage of adults obese (BMI 30 or higher),31.8
-0500000US36047,2636735.0,1143422.0,861059.0,10021.0,319263.0,Kings, New York,"(40.65642, -73.950691)",Age-adjusted percentage of adults obese (BMI 30 or higher),24.8
-0500000US36049,26957.0,25871.0,130.0,69.0,229.0,Lewis, New York,"(43.785537, -75.446296)",Age-adjusted percentage of adults obese (BMI 30 or higher),33.6
-0500000US36051,64717.0,60291.0,813.0,95.0,940.0,Livingston, New York,"(42.763754, -77.765392)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.7
-0500000US36053,71849.0,68113.0,2015.0,21.0,489.0,Madison, New York,"(42.986917, -75.720031)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.9
-0500000US36055,749600.0,570572.0,118054.0,3564.0,29177.0,Monroe, New York,"(43.161748, -77.620143)",Age-adjusted percentage of adults obese (BMI 30 or higher),24.5
-0500000US36057,49642.0,43120.0,591.0,42.0,526.0,Montgomery, New York,"(42.933637, -74.341972)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.1
-0500000US36059,1361350.0,934951.0,161031.0,2675.0,125694.0,Nassau, New York,"(40.715749, -73.601185)",Age-adjusted percentage of adults obese (BMI 30 or higher),20.8
-0500000US36061,1644518.0,927335.0,242485.0,5653.0,200997.0,New York, New York,"(40.726966, -74.005966)",Age-adjusted percentage of adults obese (BMI 30 or higher),16.8
-0500000US36063,212652.0,185129.0,15160.0,1485.0,2853.0,Niagara, New York,"(43.134634, -78.856419)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.7
-0500000US36065,232500.0,197395.0,12862.0,593.0,9268.0,Oneida, New York,"(43.149482, -75.361773)",Age-adjusted percentage of adults obese (BMI 30 or higher),36.6
-0500000US36067,468463.0,375090.0,51850.0,3022.0,17422.0,Onondaga, New York,"(43.065629, -76.168033)",Age-adjusted percentage of adults obese (BMI 30 or higher),27.9
-0500000US36069,109561.0,102195.0,3577.0,42.0,1707.0,Ontario, New York,"(42.894571, -77.252045)",Age-adjusted percentage of adults obese (BMI 30 or higher),26.8
-0500000US36071,377647.0,277839.0,40664.0,1461.0,9508.0,Orange, New York,"(41.422459, -74.241929)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.5
-0500000US36073,41582.0,36909.0,2688.0,176.0,289.0,Orleans, New York,"(43.248394, -78.218438)",Age-adjusted percentage of adults obese (BMI 30 or higher),38.5
-0500000US36075,120146.0,115345.0,791.0,160.0,966.0,Oswego, New York,"(43.39123, -76.31133)",Age-adjusted percentage of adults obese (BMI 30 or higher),33.8
-0500000US36077,60636.0,56803.0,1364.0,155.0,998.0,Otsego, New York,"(42.564852, -75.060334)",Age-adjusted percentage of adults obese (BMI 30 or higher),25.9
-0500000US36079,99042.0,87642.0,2815.0,318.0,2173.0,Putnam, New York,"(41.41131, -73.717443)",Age-adjusted percentage of adults obese (BMI 30 or higher),20.5
-0500000US36081,2339150.0,917559.0,425453.0,9780.0,591840.0,Queens, New York,"(40.749338, -73.789673)",Age-adjusted percentage of adults obese (BMI 30 or higher),22.1
-0500000US36083,160266.0,139035.0,10090.0,119.0,4386.0,Rensselaer, New York,"(42.70098, -73.628669)",Age-adjusted percentage of adults obese (BMI 30 or higher),26.8
-0500000US36085,474558.0,354859.0,50436.0,888.0,39628.0,Richmond, New York,"(40.566763, -74.148102)",Age-adjusted percentage of adults obese (BMI 30 or higher),23.2
-0500000US36087,326037.0,225743.0,41472.0,320.0,20003.0,Rockland, New York,"(41.127287, -74.017033)",Age-adjusted percentage of adults obese (BMI 30 or higher),23.1
-0500000US36089,111007.0,102843.0,2480.0,713.0,1219.0,St. Lawrence, New York,"(44.689468, -75.242045)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.7
-0500000US36091,226249.0,210629.0,3664.0,146.0,6704.0,Saratoga, New York,"(43.00894, -73.786779)",Age-adjusted percentage of adults obese (BMI 30 or higher),25.9
-0500000US36093,154604.0,118714.0,15094.0,164.0,7200.0,Schenectady, New York,"(42.809233, -73.946838)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.8
-0500000US36099,34833.0,31944.0,1353.0,20.0,258.0,Seneca, New York,"(42.833627, -76.82753)",Age-adjusted percentage of adults obese (BMI 30 or higher),28.9
-0500000US36101,97631.0,92559.0,1724.0,54.0,1659.0,Steuben, New York,"(42.270053, -77.324618)",Age-adjusted percentage of adults obese (BMI 30 or higher),32.8
-0500000US36103,1501587.0,1211538.0,116194.0,2489.0,62769.0,Suffolk, New York,"(40.820237, -73.119032)",Age-adjusted percentage of adults obese (BMI 30 or higher),28.4
-0500000US36105,74877.0,59702.0,6673.0,64.0,1460.0,Sullivan, New York,"(41.705166, -74.711705)",Age-adjusted percentage of adults obese (BMI 30 or higher),27.7
-0500000US36107,49453.0,47593.0,216.0,0.0,500.0,Tioga, New York,"(42.120252, -76.29595)",Age-adjusted percentage of adults obese (BMI 30 or higher),36.5
-0500000US36109,104926.0,84161.0,2894.0,563.0,11332.0,Tompkins, New York,"(42.461024, -76.478784)",Age-adjusted percentage of adults obese (BMI 30 or higher),21.1
-0500000US36111,180143.0,153351.0,11145.0,324.0,3805.0,Ulster, New York,"(41.848374, -74.099412)",Age-adjusted percentage of adults obese (BMI 30 or higher),26.4
-0500000US36113,64688.0,61731.0,918.0,278.0,688.0,Warren, New York,"(43.403024, -73.716044)",Age-adjusted percentage of adults obese (BMI 30 or higher),30.5
-0500000US36115,62230.0,58541.0,1977.0,35.0,199.0,Washington, New York,"(43.289513, -73.454761)",Age-adjusted percentage of adults obese (BMI 30 or higher),28.4
-0500000US36117,91446.0,85292.0,3110.0,194.0,559.0,Wayne, New York,"(43.144336, -77.117995)",Age-adjusted percentage of adults obese (BMI 30 or higher),36.8
-0500000US36119,976396.0,648511.0,142311.0,2861.0,58978.0,Westchester, New York,"(41.039278, -73.805386)",Age-adjusted percentage of adults obese (BMI 30 or higher),21.0
+id,white_population,african_american_pop,american_indian_alaska_native_pop,asian_pop,Other,Total_Population,County,State,Location,Percentage
+0500000US36001,237074.0,36840.0,613.0,19602.0,15252.0,309381.0,Albany, New York,"(42.678066, -73.814233)",26.0
+0500000US36003,45131.0,414.0,38.0,557.0,1322.0,47462.0,Allegany, New York,"(42.226801, -78.020567)",30.6
+0500000US36005,296739.0,475704.0,9275.0,53593.0,620133.0,1455444.0,Bronx, New York,"(40.85589, -73.868294)",31.0
+0500000US36007,169170.0,11374.0,335.0,8411.0,7277.0,196567.0,Broome, New York,"(42.122015, -75.933191)",31.7
+0500000US36009,71494.0,1389.0,2286.0,791.0,1962.0,77922.0,Cattaraugus, New York,"(42.224267, -78.606673)",33.5
+0500000US36011,72240.0,3663.0,107.0,248.0,2030.0,78288.0,Cayuga, New York,"(42.940095, -76.560755)",33.0
+0500000US36013,121646.0,3224.0,755.0,844.0,4310.0,130779.0,Chautauqua, New York,"(42.246904, -79.315313)",32.1
+0500000US36015,76618.0,6638.0,180.0,927.0,2708.0,87071.0,Chemung, New York,"(42.116644, -76.812331)",29.8
+0500000US36017,47063.0,758.0,137.0,212.0,674.0,48844.0,Chenango, New York,"(42.481798, -75.570013)",38.9
+0500000US36019,74541.0,3815.0,49.0,1268.0,1578.0,81251.0,Clinton, New York,"(44.731944, -73.548883)",26.8
+0500000US36021,54955.0,2698.0,86.0,1053.0,2717.0,61509.0,Columbia, New York,"(42.276913, -73.682168)",24.0
+0500000US36023,46134.0,590.0,126.0,345.0,1299.0,48494.0,Cortland, New York,"(42.597101, -76.143291)",30.8
+0500000US36025,43657.0,789.0,61.0,202.0,1344.0,46053.0,Delaware, New York,"(42.242972, -74.997944)",25.8
+0500000US36027,228378.0,31237.0,799.0,11505.0,23835.0,295754.0,Dutchess, New York,"(41.686216, -73.840468)",25.5
+0500000US36029,718294.0,126063.0,4275.0,32105.0,41841.0,922578.0,Erie, New York,"(42.888143, -78.795544)",30.7
+0500000US36031,35588.0,1329.0,98.0,290.0,1173.0,38478.0,Essex, New York,"(44.166026, -73.685145)",37.0
+0500000US36033,46232.0,2374.0,503.0,87.0,1464.0,50660.0,Franklin, New York,"(44.705699, -74.340621)",33.4
+0500000US36035,51278.0,1276.0,78.0,245.0,1115.0,53992.0,Fulton, New York,"(43.06014, -74.331296)",31.4
+0500000US36037,54366.0,1013.0,517.0,332.0,2709.0,58937.0,Genesee, New York,"(43.000121, -78.172679)",30.8
+0500000US36043,60215.0,314.0,223.0,474.0,1874.0,63100.0,Herkimer, New York,"(43.070026, -74.994246)",38.2
+0500000US36045,101377.0,7831.0,546.0,2350.0,5531.0,117635.0,Jefferson, New York,"(44.019295, -75.898971)",31.8
+0500000US36047,1143422.0,861059.0,10021.0,319263.0,302970.0,2636735.0,Kings, New York,"(40.65642, -73.950691)",24.8
+0500000US36049,25871.0,130.0,69.0,229.0,658.0,26957.0,Lewis, New York,"(43.785537, -75.446296)",33.6
+0500000US36051,60291.0,813.0,95.0,940.0,2578.0,64717.0,Livingston, New York,"(42.763754, -77.765392)",32.7
+0500000US36053,68113.0,2015.0,21.0,489.0,1211.0,71849.0,Madison, New York,"(42.986917, -75.720031)",32.9
+0500000US36055,570572.0,118054.0,3564.0,29177.0,28233.0,749600.0,Monroe, New York,"(43.161748, -77.620143)",24.5
+0500000US36057,43120.0,591.0,42.0,526.0,5363.0,49642.0,Montgomery, New York,"(42.933637, -74.341972)",30.1
+0500000US36059,934951.0,161031.0,2675.0,125694.0,136999.0,1361350.0,Nassau, New York,"(40.715749, -73.601185)",20.8
+0500000US36061,927335.0,242485.0,5653.0,200997.0,268048.0,1644518.0,New York, New York,"(40.726966, -74.005966)",16.8
+0500000US36063,185129.0,15160.0,1485.0,2853.0,8025.0,212652.0,Niagara, New York,"(43.134634, -78.856419)",30.7
+0500000US36065,197395.0,12862.0,593.0,9268.0,12382.0,232500.0,Oneida, New York,"(43.149482, -75.361773)",36.6
+0500000US36067,375090.0,51850.0,3022.0,17422.0,21079.0,468463.0,Onondaga, New York,"(43.065629, -76.168033)",27.9
+0500000US36069,102195.0,3577.0,42.0,1707.0,2040.0,109561.0,Ontario, New York,"(42.894571, -77.252045)",26.8
+0500000US36071,277839.0,40664.0,1461.0,9508.0,48175.0,377647.0,Orange, New York,"(41.422459, -74.241929)",32.5
+0500000US36073,36909.0,2688.0,176.0,289.0,1520.0,41582.0,Orleans, New York,"(43.248394, -78.218438)",38.5
+0500000US36075,115345.0,791.0,160.0,966.0,2884.0,120146.0,Oswego, New York,"(43.39123, -76.31133)",33.8
+0500000US36077,56803.0,1364.0,155.0,998.0,1316.0,60636.0,Otsego, New York,"(42.564852, -75.060334)",25.9
+0500000US36079,87642.0,2815.0,318.0,2173.0,6094.0,99042.0,Putnam, New York,"(41.41131, -73.717443)",20.5
+0500000US36081,917559.0,425453.0,9780.0,591840.0,394518.0,2339150.0,Queens, New York,"(40.749338, -73.789673)",22.1
+0500000US36083,139035.0,10090.0,119.0,4386.0,6636.0,160266.0,Rensselaer, New York,"(42.70098, -73.628669)",26.8
+0500000US36085,354859.0,50436.0,888.0,39628.0,28747.0,474558.0,Richmond, New York,"(40.566763, -74.148102)",23.2
+0500000US36087,225743.0,41472.0,320.0,20003.0,38499.0,326037.0,Rockland, New York,"(41.127287, -74.017033)",23.1
+0500000US36089,102843.0,2480.0,713.0,1219.0,3752.0,111007.0,St. Lawrence, New York,"(44.689468, -75.242045)",32.7
+0500000US36091,210629.0,3664.0,146.0,6704.0,5106.0,226249.0,Saratoga, New York,"(43.00894, -73.786779)",25.9
+0500000US36093,118714.0,15094.0,164.0,7200.0,13432.0,154604.0,Schenectady, New York,"(42.809233, -73.946838)",32.8
+0500000US36099,31944.0,1353.0,20.0,258.0,1258.0,34833.0,Seneca, New York,"(42.833627, -76.82753)",28.9
+0500000US36101,92559.0,1724.0,54.0,1659.0,1635.0,97631.0,Steuben, New York,"(42.270053, -77.324618)",32.8
+0500000US36103,1211538.0,116194.0,2489.0,62769.0,108597.0,1501587.0,Suffolk, New York,"(40.820237, -73.119032)",28.4
+0500000US36105,59702.0,6673.0,64.0,1460.0,6978.0,74877.0,Sullivan, New York,"(41.705166, -74.711705)",27.7
+0500000US36107,47593.0,216.0,0.0,500.0,1144.0,49453.0,Tioga, New York,"(42.120252, -76.29595)",36.5
+0500000US36109,84161.0,2894.0,563.0,11332.0,5976.0,104926.0,Tompkins, New York,"(42.461024, -76.478784)",21.1
+0500000US36111,153351.0,11145.0,324.0,3805.0,11518.0,180143.0,Ulster, New York,"(41.848374, -74.099412)",26.4
+0500000US36113,61731.0,918.0,278.0,688.0,1073.0,64688.0,Warren, New York,"(43.403024, -73.716044)",30.5
+0500000US36115,58541.0,1977.0,35.0,199.0,1478.0,62230.0,Washington, New York,"(43.289513, -73.454761)",28.4
+0500000US36117,85292.0,3110.0,194.0,559.0,2291.0,91446.0,Wayne, New York,"(43.144336, -77.117995)",36.8
+0500000US36119,648511.0,142311.0,2861.0,58978.0,123735.0,976396.0,Westchester, New York,"(41.039278, -73.805386)",21.0

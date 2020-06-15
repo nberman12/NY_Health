@@ -109,19 +109,6 @@ function updateToolTip(chosenXAxis, circlesGroup, chosenYAxis) {
   else if (chosenXAxis === "african_american_pop" ){
 		xLabel = "african_american_pop: ";
 	}
-	// else {
-	// 	xLabel = "Household Income: ";
-	// }
-	// if (chosenYAxis === "total_pop") {
-	// 	yLabel = "total_pop: ";
-	// } else if (chosenYAxis === "smokes" ){
-	// 	yLabel = "Smokes: ";
-	// } else {
-	// 	yLabel = "Obese: ";
-	// }
-
-
-
 
 	var toolTip = d3.tip()
 		.attr("class", "tooltip")
@@ -162,15 +149,8 @@ d3.csv("assets/data/pop_2018_df.csv").then(function(popData, err) {
 	data.id = +data.id;
 	data.white_population	= +data.white_population;
 	data.african_american_pop = +data.african_american_pop;
-	data.income	= +data.income;
-	data.incomeMoe = +data.incomeMoe;
 	data.total_pop	= +data.total_pop;
 	data.Percentage = +data.Percentage;
-	data.PercentageLow	= +data.PercentageLow;
-	data.PercentageHigh = +data.PercentageHigh;
-	data.smokes	= +data.smokes;
-	data.smokesLow = +data.smokesLow;
-	data.smokesHigh = +data.smokesHigh;
 
 	});
 
