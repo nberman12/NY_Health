@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+
+body { font: 12px Arial;}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.legend {
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+</style>
+<body>
+
+<!-- load the d3.js library -->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+
+<script>
+
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 70, left: 50},
     width = 600 - margin.left - margin.right,
@@ -18,9 +52,9 @@ var yAxis = d3.svg.axis().scale(y)
     .orient("left").ticks(5);
 
 // Define the line
-var priceline = d3.svg.line()	
+var priceline = d3.svg.line()   
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.price); });
+    .y(function(d) { return y(d.meanIncome); });
     
 // Adds the svg canvas
 var svg = d3.select("body")
@@ -34,9 +68,9 @@ var svg = d3.select("body")
 // Get the data
 d3.csv("data/compiledData.csv", function(error, data) {
     data.forEach(function(d) {
-		d.date = parseDate(d.date);
-		d.meanIncome = +d.meanIncome;
-		d.MOE = +d.MOE;
+        d.date = parseDate(d.date);
+        d.meanIncome = +d.meanIncome;
+        d.MOE = +d.MOE;
     });
 
     // Scale the range of the data
@@ -96,3 +130,6 @@ d3.csv("data/compiledData.csv", function(error, data) {
         .call(yAxis);
 
 });
+
+</script>
+</body>
