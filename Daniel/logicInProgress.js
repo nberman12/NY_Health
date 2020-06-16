@@ -1,13 +1,5 @@
 
-
 function runDaniel(chosenCounty) {
-var svgArea = d3.select("#my_dataviz").select("svg");
-
-if (!svgArea.empty()) {
-	svgArea.remove();
-}
-
-
 
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 70, left: 50},
@@ -19,9 +11,47 @@ var svg = d3.select("#my_dataviz")
     .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
-    .append("g")
+var chartGroup =svg.append("g")
         .attr("transform", 
               "translate(" + margin.left + "," + margin.top + ")");
+
+function xScale(data) {
+	var xTimeScale = d3.scaleTime()
+		.range([0, width])
+		.domain(d3.extent(data, d=>d.date));
+	return xTimeScale;
+}
+function yScale(data) {
+	var yLinearScale = d3.scaleLinear()
+		.range([height,0])
+		.domain([0, d3.max(data, d => d.meanIncome)]);
+	return yLinearScale;
+}
+
+function renderXAxes(xAxis) {
+	var bottomAxis = d3.axisBottom(newXScale);
+
+	xAxis.transition()
+		.duration(1000)
+		.call(bottomAxis)
+	return xAxis;
+}
+
+function renderYAxis(newYScale, yAxis) {
+	var leftAxis = d3.axisLeft(newYScale);
+
+	yAxis.transition()
+		.duration(1000)
+		.call(leftAxis)
+
+	return yAxis;
+}
+
+var x = d3.scaleTime()
+	.range([0, width]);
+var y = d3.scaleLinear()
+	.range([height,0])
+
 
 var drawLine=d3.line()
 	.x(function(d) {return x(d.date); })
@@ -79,14 +109,9 @@ function drawLine2(input) {
 
 
 
-var x = d3.scaleTime()
-	.range([0, width]);
-var y = d3.scaleLinear()
-	.range([height,0])
+d3.csv("compiledData.csv").then(function(data, err) {
+    if (err) throw err;
 
-
-
-d3.csv("compiledData.csv").then(function(data) {
     console.log(data);
     var parseTime = d3.timeParse("%Y");
     data.forEach(function(d) {
@@ -99,10 +124,35 @@ d3.csv("compiledData.csv").then(function(data) {
     data = data.filter(function(d) {
 		return d['county'] == chosenCounty;
     })
+
+    var xTimeScale = xScale(data);
+    var yLinearScale =yScale(data);
+
+    var bottomAxis = d3.axisBottom(xTimeScale);
+    var leftAxis = d3.axisLeft(yLinearScale);
+
+
+	x.domain(d3.extent(data, d=>d.date));
+
+	y.domain([0, 75000]);
+
+
+
+
+
+    var xAxis = chartGroup.append("g")
+    	.classed("x-axis", true)
+    	.attr("transform", `translate(0, ${height})`)
+		.call(bottomAxis);
+
+	var yAxis = chartGroup.append("g")
+		.classed("y-axis", true)
+		//.attr("transform", "rotate(-90)")
+		.call(leftAxis);
+
     console.log(data)
 
-    x.domain(d3.extent(data, d=>d.date))
-	y.domain([0, d3.max(data, d => d.meanIncome)])
+    
     
 
 
@@ -114,19 +164,8 @@ d3.csv("compiledData.csv").then(function(data) {
         .entries(data);
     console.log(dataNest)
 
-    function color(index) {
-    	var colorList =["#4287f5",
-    					"#7ac971",
-    					"#d4896e",
-    					"#76dbd3",
-    					"#95d96a",
-    					"#d9ae6a",
-    					"#68b0d4",
-    					"#6d64cc",
-    					"#070708",
-    					"#d7d7db"]
-     //return Math.floor(Math.random()*16777215).toString(16); 
-     return colorList[index]
+    function color() {
+     return Math.floor(Math.random()*16777215).toString(16); 
      }  // set the colour scale
 
     legendSpace = width/dataNest.length; // spacing for the legend
@@ -137,25 +176,20 @@ d3.csv("compiledData.csv").then(function(data) {
     	console.log(i);
         svg.append("path")
             .attr("class", "line")
-            .style("stroke", color(i))
-            .style("stroke-width", '2px')
+            .style("stroke", color())
             .attr("fill", "None")
             .attr("id", 'tag'+d.key.replace(/\s+/g, '')) // assign ID
             .attr("d", drawLine(d.values));
-        console.log('flag1')
         svg.append("path")
-	        .datum(d.values)
-			.attr("fill", color(i))
-			.attr("stroke", color(i))
-			.attr("opacity", 0.25)
-			//.attr("stroke-width", '10px')
-			.attr("id", 'tag2'+d.key.replace(/\s+/g, ''))
+	        .datum(d)
+			.attr("fill", "#cce5df")
+			.attr("stroke", "none")
+			.attr("id", 'tag'+d.key.replace(/\s+/g, ''))
 			.attr("d", d3.area()
 				.x(function(d) {return x(d.date)})
 				.y0(function(d) {return y(d.meanIncome+d.MOE)})
 				.y1(function(d) {return y(d.meanIncome-d.MOE)})
 			)
-		console.log('flag2')
 
 
         // Add the Legend
@@ -163,21 +197,17 @@ d3.csv("compiledData.csv").then(function(data) {
             .attr("x", (legendSpace/2)+i*legendSpace)  // space legend
             .attr("y", height + (margin.bottom/2)+ 5)
             .attr("class", "legend")    // style the legend
-            .style("fill", color(i) )
+            .style("fill", color() )
             .on("click", function(){
             	console.log('flag1')
                 // Determine if current line is visible 
                 var active   = d.active ? false : true,
-                newOpacity = active ? 0 : 1,
-                newOpacity2= active? 0 : 0.25;
+                newOpacity = active ? 0 : 1;
                 console.log(active, newOpacity)
                 // Hide or show the elements based on the ID
                 d3.select("#tag"+d.key.replace(/\s+/g, ''))
-                    .transition().duration(1000) 
-                    .style("opacity", newOpacity);
-                d3.select("#tag2"+d.key.replace(/\s+/g, ''))
-                    .transition().duration(1000) 
-                    .style("opacity", newOpacity2);
+                    .transition().duration(100) 
+                    .style("opacity", newOpacity); 
                 // Update whether or not the elements are active
                 d.active = active;
                 })  
@@ -196,7 +226,5 @@ d3.csv("compiledData.csv").then(function(data) {
 });
 
 }
-
-runDaniel('New York')
 
 runDaniel('Bronx')
