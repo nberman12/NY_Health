@@ -157,7 +157,13 @@ d3.csv("compiledData.csv").then(function(data) {
 			)
 		console.log('flag2')
 
-
+		svg.append("text")
+			.attr("x", (width/2))
+			.attr("y", 0-(margin.top/2))
+			.attr("text-anchor", "middle")
+			.style("font-size","16px")
+			.style("text-decoration", "underline")
+			.text(`${chosenCounty} County Median Income by Race`)
         // Add the Legend
         svg.append("text")
             .attr("x", (legendSpace/2)+i*legendSpace)  // space legend
@@ -198,5 +204,3 @@ d3.csv("compiledData.csv").then(function(data) {
 }
 
 runDaniel('New York')
-
-runDaniel('Bronx')
