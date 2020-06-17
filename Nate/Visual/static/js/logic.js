@@ -20,7 +20,7 @@ var myMap = L.map("map", {
   
   
   // Grab data with d3
-  d3.json(geoData, function(data) {
+  d3.json(geoData).then(function(data) {
   
     // Create a new choropleth layer
     var geojson = L.choropleth(data, {

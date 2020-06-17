@@ -86,7 +86,7 @@ var y = d3.scaleLinear()
 
 
 
-d3.csv("compiledData.csv").then(function(data) {
+d3.csv("Daniel/data/compiledData.csv").then(function(data) {
     console.log(data);
     var parseTime = d3.timeParse("%Y");
     data.forEach(function(d) {
