@@ -47,7 +47,9 @@ var myMap = L.map("map", {
       onEachFeature: function(feature, layer) {
         layer.bindPopup("County: " + feature.properties.name +
                         "<br>Obesity Rate:<br>" +
-                        feature.properties.percentage +"%");
+                        feature.properties.percentage +"%")
+						.on("click", function(d) {runDaniel(feature.properties.name);
+						runPeter(feature.properties.name);});
       }
     });
   

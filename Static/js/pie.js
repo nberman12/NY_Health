@@ -1,3 +1,14 @@
+function runPeter(chosenCounty) {
+	var svgArea = d3.select("#scatter").select("svg");
+
+if (!svgArea.empty()) {
+	svgArea.remove();
+}
+
+	
+	
+	
+	
 var svgWidth = window.innerWidth*0.7;
 var svgHeight = window.innerHeight*0.7;
 
@@ -30,7 +41,7 @@ var graph_height = svgHeight - margin.top - margin.bottom;
   //var data2 = {a: 6, b: 16, c:20, d:14, e:19, f:12}
 
   const file = "Static/data/Peter_Data/pop_2018_df.json";
-
+/*
   var options = ["Albany", "Suffolk", "Niagara","Queens","Erie"]
 
   d3.select("#selDataset").selectAll("option")
@@ -44,21 +55,21 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 
   function optionChanged (value){
   pie(value);
-}
+}*/
 
-function pie(value){
-  d3.json(file, function(data) {
+
+  d3.json(file).then(function(data) {
 
     data.forEach(function(num){
-    num.white_population = +num.white_population;
-    num.african_american_pop = +num.african_american_pop;
-    num.american_indian_alaska_native_pop	= +num.american_indian_alaska_native_pop;
-    num.asian_pop = +num.asian_pop;
-    num.Other = +num.Other;
-    num.Total_Population	= +num.Total_Population;
+		num.white_population = +num.white_population;
+		num.african_american_pop = +num.african_american_pop;
+		num.american_indian_alaska_native_pop	= +num.american_indian_alaska_native_pop;
+		num.asian_pop = +num.asian_pop;
+		num.Other = +num.Other;
+		num.Total_Population	= +num.Total_Population;
   });
 
-    var selected_data = data.filter(x => x.County === value);
+    var selected_data = data.filter(x => x.County === chosenCounty);
     var selected_data = selected_data[0]
     var white = selected_data.white_population;
     var black = selected_data.african_american_pop;
@@ -82,6 +93,7 @@ function pie(value){
     // Compute the position of each group on the pie:
     var pie = d3.pie()
       .value(function(d) {return d.value; })
+	  .sort(null);
 
     var data_ready = pie(d3.entries(data))
 
@@ -130,4 +142,6 @@ function pie(value){
   // Initialize the plot with the first dataset
   update(data1)
 })
-  }
+  
+}
+runPeter("New York")
