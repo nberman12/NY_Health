@@ -90,3 +90,7 @@ var myMap = L.map("map", {
     legend.addTo(myMap);
 
   });
+
+  if (myMap.scrollWheelZoom) {
+    myMap.scrollWheelZoom.disable();
+  }
