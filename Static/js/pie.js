@@ -43,6 +43,7 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 			.style("font-size","16px")
 			.style("text-decoration", "underline")
 			.text(`${chosenCounty} County Population`)
+			.style("font-weight", "bold")
 
   // create 2 data_set
   //var data2 = {a: 6, b: 16, c:20, d:14, e:19, f:12}

@@ -6,8 +6,8 @@ body {
 #map,
 body,
 html {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 30%;
 }
 
 .leaflet-popup-content {

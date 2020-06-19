@@ -18,8 +18,10 @@ html {
   left: 50px;
   z-index:5;
 }
+.header{
+  text-align:center;
+}
 
- 
 
   background-color: white;
 }

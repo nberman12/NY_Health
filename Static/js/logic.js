@@ -1,3 +1,5 @@
+function makeResponsive(){
+
 // Creating map object
 var myMap = L.map("map", {
     center: [43.1009, -75.85],
@@ -90,3 +92,15 @@ var myMap = L.map("map", {
     legend.addTo(myMap);
 
   });
+
+  if (myMap.scrollWheelZoom) {
+    myMap.scrollWheelZoom.disable();
+  }
+
+  $("#map").css("height", `${window.innerHeight}`)
+  $("#map").css("width", `${window.innerWidth*0.3}`)
+}
+
+makeResponsive();
+
+d3.select(window).on("resize",makeResponsive);
