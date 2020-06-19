@@ -48,21 +48,6 @@ var graph_height = svgHeight - margin.top - margin.bottom;
   //var data2 = {a: 6, b: 16, c:20, d:14, e:19, f:12}
 
   const file = "Static/data/Peter_Data/pop_2018_df.json";
-/*
-  var options = ["Albany", "Suffolk", "Niagara","Queens","Erie"]
-
-  d3.select("#selDataset").selectAll("option")
-    .data(options)
-    .enter()
-    .append("option")
-    .text(function(d){
-      return d;
-  });
-
-
-  function optionChanged (value){
-  pie(value);
-}*/
 
 
   d3.json(file).then(function(data) {
@@ -131,20 +116,20 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 
   }
 
-  svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#5F9EA0")
-  svg.append("text").attr("x", 220).attr("y", 130).text("African American").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",110).attr("r", 6).style("fill", "#5F9EA0")
+  svg.append("text").attr("x", 220).attr("y", 110).text("African American").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#191970")
-  svg.append("text").attr("x", 220).attr("y", 150).text("American_Indian").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#191970")
+  svg.append("text").attr("x", 220).attr("y", 130).text("American_Indian").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",170).attr("r", 6).style("fill", "#FF7F50")
-  svg.append("text").attr("x", 220).attr("y", 170).text("Asian").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#FF7F50")
+  svg.append("text").attr("x", 220).attr("y", 150).text("Asian").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",190).attr("r", 6).style("fill", "#B0C4DE")
-  svg.append("text").attr("x", 220).attr("y", 190).text("Other").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",170).attr("r", 6).style("fill", "#B0C4DE")
+  svg.append("text").attr("x", 220).attr("y", 170).text("Other").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",210).attr("r", 6).style("fill", "#2F4F4F")
-  svg.append("text").attr("x", 220).attr("y", 210).text("White").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",190).attr("r", 6).style("fill", "#2F4F4F")
+  svg.append("text").attr("x", 220).attr("y", 190).text("White").style("font-size", "15px").attr("alignment-baseline","middle")
 
   // Initialize the plot with the first dataset
   update(data1)
