@@ -19,7 +19,9 @@ html {
   z-index:5;
 }
 
-
+.charts{
+  padding-left:70px;
+}
 
   background-color: white;
 }
