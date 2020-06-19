@@ -10,9 +10,9 @@ if (!svgArea.empty()) {
 
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 70, left: 50},
-    width = 480 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+var margin = {top: 30, right: 20, bottom: 70, left: 70},
+    width = window.innerWidth*0.5 - margin.left - margin.right,
+    height = window.innerHeight*0.5 - margin.top - margin.bottom;
 
 // Adds the svg canvas
 var svg = d3.select("#my_dataviz")
@@ -204,3 +204,7 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
 }
 
 runDaniel('New York')
+
+
+
+d3.select(window).on("resize",runDaniel('New York'));
