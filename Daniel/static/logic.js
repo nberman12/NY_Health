@@ -11,7 +11,7 @@ if (!svgArea.empty()) {
 
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 70, left: 50},
-    width = 600 - margin.left - margin.right,
+    width = 480 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 // Adds the svg canvas
