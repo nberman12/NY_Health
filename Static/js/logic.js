@@ -99,7 +99,7 @@ var myMap = L.map("map", {
   }
 
   $("#map").css("height", `${window.innerHeight}`)
-  $("#map").css("width", `${window.innerWidth*0.1}`)
+  $("#map").css("width", `${window.innerWidth*0.2}`)
 }
 
 makeResponsive();
