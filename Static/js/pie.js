@@ -9,8 +9,8 @@ if (!svgArea.empty()) {
 
 
 
-var svgWidth = window.innerWidth*0.7;
-var svgHeight = window.innerHeight*0.7;
+var svgWidth = window.innerWidth*0.5;
+var svgHeight = window.innerHeight*0.5;
 
 var margin = {
 	top: window.innerHeight*0.1,
@@ -151,12 +151,5 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 })
 
 }
-function makeResponsive() {
-var svgArea = d3.select("#scatter").select("svg");
-if (!svgArea.empty()) {
-	svgArea.remove();
 runPeter("New York")
-}
-makeResponsive();
-d3.select(window).on("resize", makeResponsive);
-runPeter("New York")
+d3.select(window).on("resize", runPeter("New York"));
