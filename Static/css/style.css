@@ -3,11 +3,25 @@ body {
   margin: 0;
 }
 
-#map,
+
 body,
 html {
-  width: 500px;
+  width: 960px;
   height: 500px;
+}
+#map{
+  width: 480px;
+  height: 700px;
+
+}
+#my_dataviz{
+  left: 50px;
+  z-index:5;
+}
+
+ 
+
+  background-color: white;
 }
 
 .leaflet-popup-content {
