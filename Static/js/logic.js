@@ -3,8 +3,7 @@ function makeResponsive(){
 // Creating map object
 var myMap = L.map("map", {
     center: [43.1009, -75.85],
-    zoom: 6.25,
-    interactive: false
+    zoom: 6.25
 
   });
 
