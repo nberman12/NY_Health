@@ -5,10 +5,10 @@ if (!svgArea.empty()) {
 	svgArea.remove();
 }
 
-	
-	
-	
-	
+
+
+
+
 var svgWidth = window.innerWidth*0.7;
 var svgHeight = window.innerHeight*0.7;
 
@@ -149,6 +149,14 @@ var graph_height = svgHeight - margin.top - margin.bottom;
   // Initialize the plot with the first dataset
   update(data1)
 })
-  
+
 }
+function makeResponsive() {
+var svgArea = d3.select("#scatter").select("svg");
+if (!svgArea.empty()) {
+	svgArea.remove();
+runPeter("New York")
+}
+makeResponsive();
+d3.select(window).on("resize", makeResponsive);
 runPeter("New York")
