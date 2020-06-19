@@ -207,4 +207,4 @@ runDaniel('New York')
 
 
 
-d3.select(window).on("resize",runDaniel('New York'));
+d3.select(window).on("resize",function(d) {runDaniel('New York');runPeter('New York');consol.log(window.innerWidth,window.innerHeight);});
