@@ -11,8 +11,8 @@ if (!svgArea.empty()) {
 
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 20, bottom: 70, left: 70},
-    width = window.innerWidth*0.5 - margin.left - margin.right,
-    height = window.innerHeight*0.5 - margin.top - margin.bottom;
+    width = window.innerWidth*0.4 - margin.left - margin.right,
+    height = window.innerHeight*0.4 - margin.top - margin.bottom;
 
 // Adds the svg canvas
 var svg = d3.select("#my_dataviz")
