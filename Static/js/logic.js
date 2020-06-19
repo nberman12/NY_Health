@@ -1,7 +1,10 @@
+function makeResponsive(){
+
 // Creating map object
 var myMap = L.map("map", {
     center: [43.1009, -75.85],
-    zoom: 6.25
+    zoom: 6.25,
+    interactive: false
 
   });
 
@@ -94,3 +97,11 @@ var myMap = L.map("map", {
   if (myMap.scrollWheelZoom) {
     myMap.scrollWheelZoom.disable();
   }
+
+  $("#map").css("height", `${window.innerHeight}`)
+  $("#map").css("width", `${window.innerWidth*0.5}`)
+}
+
+makeResponsive();
+
+d3.select(window).on("resize",makeResponsive);

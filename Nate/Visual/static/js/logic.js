@@ -1,14 +1,11 @@
 function makeResponsive(){
 
-//  $("map").css("height", `${window.innerHeight*0.5}`)
-
-
 
 // Creating map object
 var myMap = L.map("map", {
     center: [43.1009, -75.85],
     zoom: 6.25,
-    interactive: false,
+    interactive: false
   
   });
 
@@ -100,6 +97,8 @@ var myMap = L.map("map", {
     myMap.scrollWheelZoom.disable();
   }
 
+  $("#map").css("height", `${window.innerHeight}`)
+  $("#map").css("width", `${window.innerWidth*0.5}`)
 }
 
 makeResponsive();
