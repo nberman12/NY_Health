@@ -10,7 +10,7 @@ if (!svgArea.empty()) {
 
 
 var svgWidth = window.innerWidth*0.5;
-var svgHeight = window.innerHeight*0.5;
+var svgHeight = window.innerHeight*0.75;
 
 var margin = {
 	top: window.innerHeight*0.1,
@@ -78,7 +78,7 @@ var graph_height = svgHeight - margin.top - margin.bottom;
   // set the color scale
   var color = d3.scaleOrdinal()
     .domain(["African_American", "American_Indian",   "Asian",    "Other",   "White"])
-    .range([          "#5F9EA0",         "#191970", "#FF7F50",  "#B0C4DE", "#2F4F4F"]);
+    .range([          "#95d96a",         "#6d64cc", "#d4896e",  "#070708", "#4287f5"]);
 
   // A function that create / update the plot for a given variable:
   function update(data) {
@@ -117,20 +117,20 @@ var graph_height = svgHeight - margin.top - margin.bottom;
 
   }
 
-  svg.append("circle").attr("cx",200).attr("cy",110).attr("r", 6).style("fill", "#5F9EA0")
-  svg.append("text").attr("x", 220).attr("y", 110).text("African American").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",0).attr("r", 6).style("fill", "#95d96a")
+  svg.append("text").attr("x", 220).attr("y", 0).text("Black").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "#191970")
-  svg.append("text").attr("x", 220).attr("y", 130).text("American_Indian").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",20).attr("r", 6).style("fill", "#6d64cc")
+  svg.append("text").attr("x", 220).attr("y", 20).text("Native American").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",150).attr("r", 6).style("fill", "#FF7F50")
-  svg.append("text").attr("x", 220).attr("y", 150).text("Asian").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",40).attr("r", 6).style("fill", "#d4896e")
+  svg.append("text").attr("x", 220).attr("y", 40).text("Asian").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",170).attr("r", 6).style("fill", "#B0C4DE")
-  svg.append("text").attr("x", 220).attr("y", 170).text("Other").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",60).attr("r", 6).style("fill", "#070708")
+  svg.append("text").attr("x", 220).attr("y", 60).text("Other").style("font-size", "15px").attr("alignment-baseline","middle")
 
-  svg.append("circle").attr("cx",200).attr("cy",190).attr("r", 6).style("fill", "#2F4F4F")
-  svg.append("text").attr("x", 220).attr("y", 190).text("White").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",200).attr("cy",80).attr("r", 6).style("fill", "#4287f5")
+  svg.append("text").attr("x", 220).attr("y", 80).text("White").style("font-size", "15px").attr("alignment-baseline","middle")
 
   // Initialize the plot with the first dataset
   update(data1)
