@@ -40,41 +40,6 @@ function drawLine2(input) {
 	}
 
 
-	/*
-	var x = d3.scaleTime()
-		.domain(d3.extent(input, d=>d.date))
-		.range([0, width]);
-	svg.append("g")
-		.attr("transform","translate(0," + height + ")")
-		.call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y")));
-
-	var y = d3.scaleLinear()
-		.domain([0, 75000])
-		.range([height,0])
-	svg.append("g")
-		.call(d3.axisLeft(y));
-
-
-
-	svg.append("path")
-		.datum(input)
-		.attr("fill", "#cce5df")
-		.attr("stroke", "none")
-		.attr("d", d3.area()
-			.x(function(d) {return x(d.date)})
-			.y0(function(d) {return y(d.meanIncome+d.MOE)})
-			.y1(function(d) {return y(d.meanIncome-d.MOE)})
-			)
-	svg.append("path")
-		.datum(input)
-		.attr("fill", "none")
-		.attr("stroke", "steelblue")
-		.attr("stroke-width",1.5)
-		.attr("d", d3.line()
-			.x(function(d) {return x(d.date)})
-			.y(function(d) {return y(d.meanIncome)})
-			)
-			*/
 
 
 
@@ -87,7 +52,7 @@ var y = d3.scaleLinear()
 
 
 d3.csv("Daniel/data/compiledData.csv").then(function(data) {
-    console.log(data);
+    //console.log(data);
     var parseTime = d3.timeParse("%Y");
     data.forEach(function(d) {
 		d.date = parseTime(d.date);
@@ -99,7 +64,7 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
     data = data.filter(function(d) {
 		return d['county'] == chosenCounty;
     })
-    console.log(data)
+    //console.log(data)
 
     x.domain(d3.extent(data, d=>d.date))
 	y.domain([0, d3.max(data, d => d.meanIncome)])
@@ -112,7 +77,7 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
         //.key(function(d) {return d.county; })
         .key(function(d) {return d.race; })
         .entries(data);
-    console.log(dataNest)
+    //console.log(dataNest)
 
     function color(index) {
     	var colorList =["#4287f5",
@@ -133,8 +98,8 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
 
     // Loop through each symbol / key
     dataNest.forEach(function(d,i) { 
-    	console.log(d);
-    	console.log(i);
+    	//console.log(d);
+    	//console.log(i);
         svg.append("path")
             .attr("class", "line")
             .style("stroke", color(i))
@@ -142,7 +107,7 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
             .attr("fill", "None")
             .attr("id", 'tag'+d.key.replace(/\s+/g, '')) // assign ID
             .attr("d", drawLine(d.values));
-        console.log('flag1')
+        //console.log('flag1')
         svg.append("path")
 	        .datum(d.values)
 			.attr("fill", color(i))
@@ -155,7 +120,7 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
 				.y0(function(d) {return y(d.meanIncome+d.MOE)})
 				.y1(function(d) {return y(d.meanIncome-d.MOE)})
 			)
-		console.log('flag2')
+		//console.log('flag2')
 
 		svg.append("text")
 			.attr("x", (width/2))
@@ -171,12 +136,12 @@ d3.csv("Daniel/data/compiledData.csv").then(function(data) {
             .attr("class", "legend")    // style the legend
             .style("fill", color(i) )
             .on("click", function(){
-            	console.log('flag1')
+            	//console.log('flag1')
                 // Determine if current line is visible 
                 var active   = d.active ? false : true,
                 newOpacity = active ? 0 : 1,
                 newOpacity2= active? 0 : 0.25;
-                console.log(active, newOpacity)
+                //console.log(active, newOpacity)
                 // Hide or show the elements based on the ID
                 d3.select("#tag"+d.key.replace(/\s+/g, ''))
                     .transition().duration(1000) 
